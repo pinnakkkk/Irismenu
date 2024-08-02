@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,7 +7,17 @@
 }
 
 body {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal; /* or specify any weight you prefer */
 }
 
 .container {
@@ -35,7 +47,7 @@ footer {
   flex: 1;
   overflow-y: auto;
   padding: 10px;
-  background-color: #f9dcdc;
+  background-color: transparent;
 }
 
 .item-container {
@@ -84,14 +96,13 @@ img {
   border-radius: 10px;
 }
 
-
 .scroll-button {
   position: relative; /* Positioned relative to the footer */
-  background-color: transparent; 
+  background-color: transparent;
   border: none;
   display: flex; /* Center circular container inside */
-  align-items: center; 
-  justify-content: center; 
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   transition: background-color 0.5s ease-in-out;
@@ -99,10 +110,10 @@ img {
 
 /* Circular button container */
 .circle-container {
-  border-radius: 50%; 
-  width: 50px; 
-  height: 50px; 
-  background-color: #acc4de; 
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #acc4de;
   display: flex; /* Center image inside the circle */
   align-items: center;
   justify-content: center;
@@ -116,6 +127,17 @@ img {
   background-color: #c3d7ed;
 }
 
+#cursor {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(170, 160, 255);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
 
 @media (max-width: 400px) {
   header {
