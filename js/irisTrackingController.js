@@ -1,4 +1,5 @@
 import {trackGazeInteraction} from "./gazeInteractions.js";
+import { showToast } from "./utils.js";
 
 let camera = null;
 let faceMesh = null;
@@ -96,7 +97,7 @@ function onResults(results) {
         baseY = (minY + maxY) / 2;
         isCalibrated = true;
       }
-      console.log(
+      showToast(
         `Calibrating... ${Math.round(
           (calibrationCount / calibrationFrames) * 100
         )}%`
